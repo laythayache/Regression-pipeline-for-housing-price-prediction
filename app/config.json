@@ -1,0 +1,48 @@
+{
+  "data": {
+    "raw_data_path": "../data/housing_data.csv",
+    "processed_data_path": "../data/processed_housing_data.csv",
+    "engineered_data_path": "../data/engineered_housing_data.csv",
+    "target_column": "price"
+  },
+  "preprocessing": {
+    "missing_strategy": "mean",
+    "remove_duplicates": true,
+    "handle_outliers": true,
+    "outlier_method": "iqr",
+    "scale_method": "standard"
+  },
+  "feature_engineering": {
+    "create_domain_features": true,
+    "create_interactions": true,
+    "create_polynomial": false,
+    "create_binned": true,
+    "feature_selection_method": "k_best",
+    "k_features": 15,
+    "apply_pca": false
+  },
+  "model_training": {
+    "perform_cv": true,
+    "tune_best_models": true,
+    "top_models_to_tune": 3,
+    "test_size": 0.2,
+    "val_size": 0.1
+  },
+  "evaluation": {
+    "save_plots": true,
+    "create_comparison": true,
+    "generate_report": true
+  },
+  "deployment": {
+    "save_model_package": true,
+    "enable_monitoring": true,
+    "deployment_dir": "../deployment",
+    "monitoring_dir": "../monitoring"
+  },
+  "output": {
+    "models_dir": "../models",
+    "plots_dir": "../plots",
+    "reports_dir": "../reports",
+    "logs_dir": "../logs"
+  }
+}
