@@ -1,0 +1,31 @@
+{
+  "model_version": "1.0",
+  "deployment_date": "2025-07-31T17:57:18.542528",
+  "model_type": "Ridge",
+  "feature_count": 15,
+  "expected_features": [
+    "sqft_living",
+    "floors",
+    "condition",
+    "grade",
+    "total_sqft",
+    "quality_score",
+    "size_category_encoded",
+    "sqft_per_bedroom",
+    "sqft_living_binned",
+    "floors_binned",
+    "grade_binned",
+    "total_sqft_binned",
+    "quality_score_binned",
+    "size_category_encoded_binned",
+    "sqft_per_bedroom_binned"
+  ],
+  "performance_baseline": {
+    "mse": 7895901843.262035,
+    "rmse": 88858.88724974016,
+    "mae": 65680.88540141101,
+    "r2": 0.5755727251617875
+  },
+  "monitoring_enabled": true,
+  "drift_detection_enabled": true
+}

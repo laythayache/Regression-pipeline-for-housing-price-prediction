@@ -1,0 +1,42 @@
+{
+  "data_shape": {
+    "train": [
+      837,
+      15
+    ],
+    "val": [
+      120,
+      15
+    ],
+    "test": [
+      240,
+      15
+    ]
+  },
+  "models_trained": [
+    "linear_regression",
+    "ridge",
+    "lasso",
+    "elastic_net",
+    "decision_tree",
+    "random_forest",
+    "gradient_boosting",
+    "extra_trees",
+    "svr",
+    "knn"
+  ],
+  "cv_performed": true,
+  "best_model": "ridge_tuned",
+  "best_val_score": 93910.73152953529,
+  "test_metrics": {
+    "mse": 7895901843.262035,
+    "rmse": 88858.88724974016,
+    "mae": 65680.88540141101,
+    "r2": 0.5755727251617875
+  },
+  "tuned_models": [
+    "ridge",
+    "lasso"
+  ],
+  "feature_count": 15
+}
